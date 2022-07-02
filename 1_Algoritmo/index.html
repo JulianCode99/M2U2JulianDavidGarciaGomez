@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <title>Algoritmos y Diagramas de Flujo</title>
+  </head>
+  <body>
+    <div class="container">
+      <h4 class="title is-3">Registrando Mis Materias En La Universidad</h4>
+      <p class="description">
+          Problema Planteado.. Crear un Algoritmo que le permita al estudiante ingresar:
+      </p>
+      <p class="description">
+        -a. Nombre del estuadiante
+        -b. Cantidad de materias 
+        -c. Valor de cada materia
+        -d. Valor Fijo Papeleria $20.000, Carnet $8.000
+        -e. Descuento 20% sobre el valor de materias
+      </p>
+      <p class="description">
+          Objetivo: Imprimir el valor total de materias registro mostrando el 20% de descuento
+          mas los cosotos fijos por la universidad.
+      </p>
+      <br>
+      <h4 class="title is-3">!Listos para Comenzar!</h4>
+      <p class="indication">
+        Ingresa tu nombre completo y las materias que desee matricular:
+      </p>
+      <br>
+      <form id="inputName">
+        <div>
+          <input
+            class="input"
+            type="text"
+            id="name"
+            placeholder="Nombres y apellidos del estudiante"
+          />
+        </div>
+      </form>
+
+      <form action="" id="form">
+        <div class="field is-grouped">
+          <div class="control">
+            <input
+              class="input"
+              name="subject"
+              type="text"
+              placeholder="Nombre de la Materia"
+            />
+          </div>
+          <div class="control">
+            <input
+              class="input"
+              name="value"
+              type="number"
+              placeholder="Valor de la Materia"
+            />
+          </div>
+
+          <div class="control">
+            <button id="btnAdd" type="button" class="button is-primary">Registar Materia y Precio</button>
+          </div>
+         <div class="control">
+            <button id="btnSend" type="button" class="button is-info">Calcular $Total</button>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <label> Nombre Del Estudiante: </label>
+          </div>
+          <div class="control">
+            <p id="nameP"></p>
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <div class="control">
+            <label>
+              El valor de la matricula con el descuento incluido es:
+            </label>
+          </div>
+          <div class="control">
+            <p id="result"></p>
+          </div>
+        </div>
+      </form>
+      <hr />
+      <div id="divElements"></div>
+    </div>
+    <script src="./Subjects.js"></script>
+  </body>
+</html>
